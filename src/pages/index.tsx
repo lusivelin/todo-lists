@@ -1,5 +1,6 @@
 import Head from "next/head";
-import styles from "@/styles/page/Home.module.css";
+import styles from "@/pages-styles/Home.module.css";
+import TaskProgress from "@/elements/TaskProgress";
 
 export default function Home() {
   return (
@@ -16,9 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         {/* Home Section */}
         <section>
-          <div>Banner Image</div>
-
-          <div>Banner Content</div>
+          <TaskProgress completed={20} tasks={10} />
         </section>
       </main>
     </>
