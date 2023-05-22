@@ -1,0 +1,76 @@
+.customDropDown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropDownSelected {
+  font-size: 14px;
+  min-width: 110px;
+  padding: 7px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s;
+
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropDownSelected span {
+  margin-right: 5px;
+}
+
+.dropDownSelected svg {
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+.dropDownOptions {
+  min-width: 110px;
+  position: absolute;
+  background: #ffffff;
+
+  width: 100%;
+  margin: 0;
+  margin-top: 5px;
+
+  list-style-type: none;
+
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+
+  box-shadow: 0px 0px 8px 0px #0000001a;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.dropDownOptions li {
+  font-size: 14px;
+  padding: 6px 9px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  background: #fff;
+  border-radius: 8px;
+}
+
+.dropDownOptions li:hover {
+  background: #585292;
+  color: #fff;
+}
+
+.customOpen .dropDownSelected svg {
+  transform: rotate(180deg);
+}
+
+.customOpen .dropDownOptions {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 9999;
+}

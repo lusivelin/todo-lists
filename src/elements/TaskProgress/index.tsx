@@ -1,5 +1,5 @@
-import styles from "@/components-styles/TaskProgress.module.css";
 import useTaskProgress from "./hook";
+import styles from "@/components-styles/TaskProgress.module.css";
 
 const TaskProgress = ({
   completed = 12,

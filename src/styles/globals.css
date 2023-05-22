@@ -19,6 +19,7 @@ body {
 
   margin: 0;
   padding: 0;
+  background: #e5e5e5;
 }
 
 .no-scroll {
@@ -103,4 +104,42 @@ table {
 td,
 th {
   padding: 0;
+}
+
+/* CustomCheckBox */
+.myCheckbox {
+  display: none;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #585292;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.custom-checkbox::before {
+  content: url("/tick.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::before {
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: #585292;
 }

@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 6px;
+  background: #ffffff;
+  border-radius: 9999px;
+}
+
+.input {
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+
+  border: none;
+  outline: none;
+}

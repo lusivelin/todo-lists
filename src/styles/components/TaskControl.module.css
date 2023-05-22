@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #ffffff;
+  border-radius: 9999px;
+  margin-bottom: 17px;
+}
+
+.description {
+  margin-right: auto;
+  margin-left: 16px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.dotIcon {
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.deleteBtn {
+  color: #e07c7c;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
