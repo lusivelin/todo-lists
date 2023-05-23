@@ -39,7 +39,12 @@ export default function Home() {
 
   const [filter, setFilter] = useState<keyof typeof filteredTodos>("all");
 
-  if (isLoading) return <div className={styles.loading}>Loading....</div>;
+  if (isLoading)
+    return (
+      <div className={styles.loading}>
+        <h2>Loading.... Connecting to the API</h2>
+      </div>
+    );
 
   return (
     <>
