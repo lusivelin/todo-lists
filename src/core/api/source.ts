@@ -1,6 +1,6 @@
 import Axios, { AxiosResponse } from "axios";
 
-const APP_API = "http://localhost:3001";
+const APP_API = "https://nice-plum-coral-kit.cyclic.app";
 
 export const Api = Axios.create({
   baseURL: APP_API,
